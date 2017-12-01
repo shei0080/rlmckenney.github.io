@@ -162,8 +162,7 @@ header {
   font-size: 1.3em; }
 
 header img {
-  width: 20px;
-  position: absolute;
+  position: relative;
   image-resolution: 50px;
   top: 0px; }
 
