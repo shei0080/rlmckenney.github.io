@@ -174,9 +174,9 @@ header{
     font-size: 1.3em;
 }
 header img{
-    position:relative;
-		image-resolution: 50px;
-    top:0px;
+	position:absolute;
+	top:0px;
+	z-index:-1;
 }
 
 /*    Section One    */
