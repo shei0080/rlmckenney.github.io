@@ -148,6 +148,7 @@ nav a {
 
 /*Navigation*/
 header {
+  background-image: url(../img/darkskyandmoon.jpg);
   margin-top: 20%;
   color: white;
   opacity: 0;
@@ -161,9 +162,10 @@ header {
   font-size: 1.3em; }
 
 header img {
+  width: 20px;
   position: absolute;
-  top: 0px;
-  z-index: -1; }
+  image-resolution: 50px;
+  top: 0px; }
 
 /*    Section One    */
 .section-one {
