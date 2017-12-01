@@ -69,10 +69,11 @@ a {
 	outline: none;
 	color: #ed1e24;
 	transition: all .3s ease-in-out;
+	&:hover {
+		text-decoration: underline;
+	}
 }
-a:hover {
-	text-decoration: underline;
-}
+
 p {
 	padding: 0;
 	margin: 0 0 2em;
@@ -126,23 +127,9 @@ h1{
     color:white;
     animation: titles 1s forwards;
 }
-header p{
-    text-align:center;
-    font-size:1.3em;
-    font-weight: 200;
-    animation: titles 1s forwards;
-}
 
                 /*Navigation*/
-nav ul li {
-    display:inline-block;
-    margin:20px;
-}
-nav ul{
-    position: fixed;
-    right:20px;
-    top:0px;
-}
+
 nav{
     position:fixed;
     top:0px;
@@ -150,11 +137,20 @@ nav{
     width:100%;
     height: 70px;
     z-index:5;
+		a{
+		    color:white;
+		}
+		ul{
+		    position: fixed;
+		    right:20px;
+		    top:0px;
+				li {
+				    display:inline-block;
+				    margin:20px;
+				}
+		}
 }
 
-nav a{
-    color:white;
-}
                 /*Navigation*/
 
 header{
@@ -164,6 +160,18 @@ header{
     opacity:0;
     animation:intro 1s forwards;
 
+		img{
+			position:absolute;
+			top:0px;
+			z-index:-1;
+			height: 1000px;
+		}
+		p{
+		    text-align:center;
+		    font-size:1.3em;
+		    font-weight: 200;
+		    animation: titles 1s forwards;
+		}
 }
 
 .scope{
@@ -172,11 +180,6 @@ header{
     top: 20px;
     text-transform: uppercase;
     font-size: 1.3em;
-}
-header img{
-	position:absolute;
-	top:0px;
-	z-index:-1;
 }
 
 /*    Section One    */
@@ -198,11 +201,6 @@ header img{
 /*    About    */
 
 /*profile picture*/
-.about img{
-    width:250px;
-    border-radius: 100%;
-    filter: grayscale(100%);
-}
 .about{
     position:absolute;
     top:925px;
@@ -210,14 +208,21 @@ header img{
     height: 500px;
     background:#eee;
     text-align: center;
-    padding-top:20px
+    padding-top:20px;
+
+		img{
+		    width:250px;
+		    border-radius: 100%;
+		    filter: grayscale(100%);
+		}
+		p{
+		    color:black;
+		    margin-top: 20px;
+		    width:80%;
+		    margin-left:10%;
+		}
 }
-.about p{
-    color:black;
-    margin-top: 20px;
-    width:80%;
-    margin-left:10%;
-}
+
 
 /*    Work    */
 
@@ -227,21 +232,24 @@ header img{
     position:absolute;
     top: 1425px;
     text-align: center;
-}
-.work .column{
-    width:25%;
-    display:inline-block;
-    height: 500px;
+
+		.column{
+		    width:25%;
+		    display:inline-block;
+		    height: 500px;
+
+				i{
+				    width:100px;
+				    height:75px;
+				    border:1px solid black;
+				    border-radius: 100%;
+				    padding-top:25px
+				}
+		}
 }
 
+
 /*icons*/
-.column i{
-    width:100px;
-    height:75px;
-    border:1px solid black;
-    border-radius: 100%;
-    padding-top:25px
-}
 .three{
     position:relative;
     top:-29px;
@@ -259,10 +267,11 @@ header img{
     width: 100%;
     background:#eee;
     text-align: center;
-}
-.gallery h2{
-    margin-top: 25px;
-    margin-bottom: 25px;
+
+		h2{
+		    margin-top: 25px;
+		    margin-bottom: 25px;
+		}
 }
 .pictures{
     display:flex;
@@ -272,18 +281,20 @@ header img{
     align-items: center;
     margin-top:35px;
 
-}
-.pictures img{
-    width:380px;
-    margin:10px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    transition:0.5s;
-}
-.pictures img:hover{
-    transition:0.5s;
-    filter:sepia(100);
-    box-shadow:0px 0px 10px;
+		img{
+		    width:380px;
+		    margin:10px;
+		    flex-grow: 1;
+		    flex-shrink: 1;
+		    transition:0.5s;
+
+				&:hover{
+				    transition:0.5s;
+				    filter:sepia(100);
+				    box-shadow:0px 0px 10px;
+				}
+		}
+
 }
 img{
     width:inherit;
@@ -299,22 +310,25 @@ footer{
     z-index:2;
     text-align: center;
     background: #151515;
-}
 
-footer h2{
-    margin-top:25px;
-    color:#eee;
-}
-footer div{
-    display:inline-block;
-    margin-left:5%;
-    margin-right:5%;
+		h2{
+		    margin-top:25px;
+		    color:#eee;
+		}
+		div{
+		    display:inline-block;
+		    margin-left:5%;
+		    margin-right:5%;
+
+				p {
+					 margin-left: 20px;
+			 }
+		}
+
+
 }
 .icon i,.icon p{
     display:inline-block;
-}
-footer div p {
-    margin-left: 20px;
 }
 
 /*    Animation    */
